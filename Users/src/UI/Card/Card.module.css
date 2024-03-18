@@ -1,0 +1,29 @@
+.card{
+    border-radius: 10px;
+    padding: 2rem 2rem 3rem;
+    margin-right: 20px;
+    margin-bottom: 23px;
+    background-color: #f9f9f9;
+}
+
+.cardContents {
+    display: flex;
+}
+
+.cardContents img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.cardContents h2{
+margin-bottom: 10px;
+}
+
+.card:nth-child(2) {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 1px solid #d4e4ff;
+    background-color: #fff;
+}

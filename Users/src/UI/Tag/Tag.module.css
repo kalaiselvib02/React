@@ -1,0 +1,17 @@
+.tagsContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.tagsContainer .tag {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 11px;
+    padding: 6px 6px;
+    margin-right: 10px;
+    margin-top: 10px;
+    color: #1965e0;
+    font-weight: 600;
+    background-color: #fbfcff;
+    text-align: center;
+
+}
