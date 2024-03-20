@@ -1,6 +1,6 @@
 
 import styles from  "./NavList.module.css"
-export function NavList() {
+export default function NavList() {
     return (
      <ul className={styles.navList}>
         <li>Reputation</li>
@@ -12,5 +12,5 @@ export function NavList() {
     );
   }
   
-  export default NavList;
+ 
   

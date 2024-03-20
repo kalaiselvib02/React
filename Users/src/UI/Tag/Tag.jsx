@@ -1,8 +1,7 @@
 
 import styles from "./Tag.module.css"
 
-export function Tag({tag}) {
-  console.log({tag})
+export default function Tag({tag}) {
   return (
    <p  className={styles.tag}>
     {tag}
@@ -10,4 +9,3 @@ export function Tag({tag}) {
   );
 }
 
-export default Tag;

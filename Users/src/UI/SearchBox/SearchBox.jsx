@@ -2,7 +2,7 @@
 import styles from  "./SearchBox.module.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
-export function SearchBox() {
+export default function SearchBox() {
     return (
     <>
      <div  className={styles.searchContainer}>
@@ -17,5 +17,5 @@ export function SearchBox() {
     );
   }
   
-  export default SearchBox;
+
   

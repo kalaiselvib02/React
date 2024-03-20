@@ -1,34 +1,33 @@
-
-import styles from  "./Homepage.module.css"
+import styles from "./Homepage.module.css";
 import Header from "../UI/Header/Header";
 import Card from "../UI/Card/Card";
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
+import { APP_CONSTANTS } from "../constants/constants";
+import { fetchData } from "../services/fetch.service";
 
+export default function HomePage() {
+  const [users, setNewUsers] = useState([]);
 
-export  function HomePage() {
-    const [users, setNewUsers] = useState([]);
-    
-      const fetchInfo = async () => { 
-      const response = await fetch('https://mped25d832731ebe9b97.free.beeceptor.com/data');
-      const fetchedResponse = await response.json();
-      setNewUsers(fetchedResponse.newUsers)
-      }
+  // Function to set the users data
+  const assignUsers = async () => {
+    const usersData = await fetchData(APP_CONSTANTS.FETCH_URL)
+    setNewUsers(usersData.newUsers);
+  };
 
-       useEffect(() => {
-        fetchInfo();
-   
-      }, [])
-    return (
-   <>
-        <h1 className={styles.titleText}>Users</h1>
-        <Header />
-        <div className={styles.cardContainer}>
-         {users.map((user) => (
-         <Card key={user.id} {...user} />
+  useEffect(() => {
+    assignUsers();
+  }, []);
+  return (
+    <>
+      <h1 className={styles.titleText}>Users</h1>
+      <Header />
+      <div className={styles.cardContainer}>
+        {users?.map((user) => (
+          <Card key={user.id} {...user} />
         ))}
-        </div>
-   </>
+      </div>
+    </>
   );
 }
 
-export default HomePage;
+

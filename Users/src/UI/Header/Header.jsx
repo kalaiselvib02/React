@@ -1,14 +1,14 @@
 
-import { NavList } from "../NavList/NavList";
-import { SearchBox } from "../SearchBox/SearchBox";
+import  NavList  from "../NavList/NavList";
+import  SearchBox  from "../SearchBox/SearchBox";
 import styles from "./Header.module.css";
-export function Header() {
+export default function Header() {
   return (
-   <heade className={styles.header}>
+   <header className={styles.header}>
     <SearchBox/>
     <NavList/>
-   </heade>
+   </header>
   );
 }
 
-export default Header;
+
