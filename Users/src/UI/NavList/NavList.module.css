@@ -1,0 +1,12 @@
+.navList {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navList .active {
+    background-color: #849fff;
+    padding: 13px;
+    color: #fff;
+    border-radius: 5px;
+}

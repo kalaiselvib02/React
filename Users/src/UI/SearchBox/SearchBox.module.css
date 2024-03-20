@@ -1,0 +1,23 @@
+
+
+.searchContainer {
+    position: relative;
+}
+.searchContainer input {
+    border: 1px solid #a29e9e;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2.5rem;
+    padding-right: 1.5rem;
+    border-radius: 2px;
+    min-width: 250px;
+
+}
+
+.searchIcon {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-5%, -50%);
+    font-size: 20px;
+}

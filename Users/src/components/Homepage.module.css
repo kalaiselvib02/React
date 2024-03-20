@@ -1,0 +1,9 @@
+.titleText {
+    padding: 1rem 5rem 0;
+    font-size: 1.65rem;
+}
+.cardContainer {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    padding: 2rem 5rem;
+}
